@@ -1,0 +1,452 @@
+ /*----- specification -----*/
+ @font-face {
+    font-family: 'SusaLight';
+    src: url('../fonts/SusaLight.eot');
+    src: url('../fonts/SusaLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SusaLight.woff2') format('woff2'),
+        url('../fonts/SusaLight.woff') format('woff'),
+        url('..fonts/SusaLight.ttf') format('truetype'),
+        url('../fonts/SusaLight.svg#SusaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/*.your-style {
+    font-family: 'SusaLight';
+    font-weight: 300;
+    font-style: normal;
+}*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+}
+div, p, form, input, a, span, button,{
+	box-sizing: border-box;
+}
+ul, li, a{
+	text-decoration: none;
+	list-style: none; 
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+a, a:hover, a:active{
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+}
+a:hover{
+	color: #000000 !important;
+}
+a, button, input{
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+input, input:hover, input:active, input:focus,
+button:hover, button:active, button:focus{
+	outline: none;
+}
+button{
+	cursor: pointer;
+}
+
+/* ------ Первый экран ------*/
+
+header{
+	position: relative;
+	
+	background: url(Images/header-bg.jpg) no-repeat center center / auto;
+}
+.logo a{
+	display: block;
+	color: #ffffff;
+	font-family: 'SusaLight';
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 44.72px;
+	padding-top: 15px;
+}
+.menu{
+	margin-top: 18px;
+	margin-bottom: 137px;
+}
+.menu__item a{
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 44.72px;
+	text-transform: uppercase;
+}
+
+.h1{
+	display: block;
+	margin-bottom: -24px;
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 44.72px;
+}
+
+.header__text{
+	display: block;
+	margin-bottom: -15px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 44.72px;
+}
+
+.header__btn{
+	max-width: 153px;
+	background: none;
+	margin-bottom: 30px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 44.72px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 0px 27px 0px 25px;
+	margin-bottom: 152px !important;
+}
+
+/*HAMBURGER*/
+.hamburger{
+	margin-top: 10%;
+	/*position: fixed;*/
+	color: #fff;
+	background: none;
+	border: none;
+	font-size: 25px;
+}
+.hamburger:hover{
+	color: black;
+}
+/*CLASS CLICK HAMBURGER*/
+.menu-togler{
+	display: block !important;
+	position: absolute;
+	top: 40%;
+}
+.menu-togler .menu{
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0, 0.8);
+	margin: auto;
+	padding: 40px 0px;
+}
+.menu-togler .menu__item{
+	margin: auto;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+
+     /*--- Второй экран ---*/
+.wraper-color{
+	flex-wrap: wrap;
+}
+.content h4{
+	color: #000000;
+	font-family: "Open Sans";
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 44.72px;
+	text-transform: none;
+	margin-top: 75px;
+	margin-bottom: 16px;
+}
+.content p{
+	max-width: 862px;
+	color: #404040;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24.72px;
+	margin-bottom: 55px;
+}
+.content img{
+	display: block;
+	max-width: 178px;
+	margin-bottom: 105px;
+}
+
+	/*--- Третий экран ---*/
+
+.color .dark{
+	width: 37%;
+	background: #404040;
+	padding-top: 35px;
+	padding-left: 12.5%;
+	padding-bottom: 65px;
+}
+
+.color .red{
+	width: 29%;
+	background: #f74c55;
+	padding-top: 35px;
+	padding-left: 4%;
+	padding-bottom: 65px;
+}
+
+
+.color .green{
+	width: 34%;
+	background: #2d5f3b;
+	padding-top: 35px;
+	padding-left: 3%;
+	padding-bottom: 65px;
+}
+
+.color img{
+	color: #ffffff;
+}
+
+.dark img{
+	width: 28px;
+	height: 34px;
+}
+
+.red img{
+	width: 36px;
+	height: 36px;
+}
+
+.green img{
+	width: 39px;
+	height: 27px;
+}
+
+.color h5{
+	margin-left: 3%;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 44.72px;
+	text-transform: none;
+	margin-top: -7px;
+}
+
+.color p{
+	max-width: 268px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	margin-top: 7px;
+	margin-bottom: 12px;
+}
+.wraper-color{
+	position: relative;
+}
+.btn-wrap{
+	position: absolute;
+	left: 210px;
+}
+.color button{
+	width: 33px;
+	height: 33px;
+	margin-bottom: 15px;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 44.72px;
+	background-color: rgba(28, 61, 37, 0.7);;
+	margin-left: 74%;
+	border: none;
+	position: relative;
+	margin-bottom: 31px;
+}
+.color button>.green-btn{
+}
+
+.color button span{
+	position: absolute;
+	top: -6px;
+	left: 7px;
+}
+
+    /*--- Третий экран ---*/
+
+.music{
+	max-width: 1280px !important;
+	margin: auto;
+	background:
+ 	url(Images/Slice.jpg) repeat-x bottom left / auto,
+	url(Images/overlay.png) no-repeat center center / auto
+}
+.music h2{
+color: #ffffff;
+/*font-family: "Open Sans";*/
+font-size: 42px;
+line-height: 53.72px;
+font-family: "Open Sans Light";
+font-weight: 300;
+text-transform: none;
+margin-top: 171px
+}
+
+.music h2 span{
+font-family: "Open Sans";
+font-weight: 700;
+
+}
+
+.music button{
+	max-width: 179px;
+	background: none;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 44.72px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 0px 28px 0px 28px;
+	margin-top: 38px;
+	margin-bottom: 145px;
+}
+
+	/* --- Footer ---*/
+
+footer p{
+	opacity: 0.8;
+	color: #000000;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 53.72px;
+	margin-top: 10px;
+}
+
+footer pre{
+	color: rgba(0,0,0,0.9);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+	.wraper-color{
+		display: flex;
+		flex-direction: column;
+	}
+	.color .dark{
+		width: 100%;
+		background: #404040;
+		padding-left: 10%;
+	}
+
+	.color .red{
+		width: 100%;
+		background: #f74c55;
+		padding-left: 10%;
+	}
+
+	.color .green{
+		width: 100%;
+		background: #2d5f3b;
+		padding-left: 10%;
+	}
+	.btn-wrap{
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.logo{
+		margin-top: 30px;
+	}
+	.hamburger{
+		margin-top: 45px;
+		margin-bottom: 80px;
+		color: #fff;
+		background: none;
+		border: none;
+		font-size: 25px;
+	}
+	
+	.wraper-color{
+		display: flex;
+		flex-direction: column;
+	}
+	.color .dark{
+		width: 100%;
+		background: #404040;
+	}
+
+	.color .red{
+		width: 100%;
+		background: #f74c55;
+	}
+
+	.color .green{
+		width: 100%;
+		background: #2d5f3b;
+	}
+
+	.color button{
+		margin: 0;
+	}
+
+	.btn-wrap{
+		position: absolute;
+		left: 65%;
+		top: 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.btn-wrap{
+		position: absolute;
+		left: 75%;
+		top: 50%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+
+}
+@media screen and (max-width: 360px) {
+	.btn-wrap{
+		position: absolute;
+		left: 35%;
+		top: 100%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	
+	.btn-wrap{
+	position: absolute;
+	left: 35%;
+	top: 100%;
+	}
+ 	}
+}
